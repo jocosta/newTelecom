@@ -1,0 +1,147 @@
+﻿@model NewTelecom.Ui.Models.Cliente
+
+@{                   
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Novo Cliente";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+   
+    <div class="cell auto-size padding20 bg-white" id="cell-content">
+        <h1 class="text-light">Clientes <span class="mif-users place-right"></span></h1>
+        <hr class="thin bg-grayLighter">
+
+        <div class="row cells2">
+            <div class="cell">
+                <div class="input-control modern text iconic">
+                    <input type="text" name="Cpf">
+                    <span class="label">CPF</span>
+                    <span class="informer">Insira o CPF do Cliente</span>
+                    <span class="placeholder">CPF</span>
+                    <span class="icon mif-profile"></span>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div class="input-control modern text iconic">
+                    <input type="text" name="DocIdentidade">
+                    <span class="label">Doc. Identidade</span>
+                    <span class="informer">Insira o Doc. de Identidade</span>
+                    <span class="placeholder">Doc. de Identidade</span>
+                    <span class="icon mif-profile"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row cells2">
+            <div class="cell">
+                <div class="input-control modern text iconic">
+                    <input type="text" name="Nome">
+                    <span class="label">Nome</span>
+                    <span class="informer">Insira o Nome</span>
+                    <span class="placeholder">Nome</span>
+                    <span class="icon mif-user"></span>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div class="input-control modern text iconic" data-role="datepicker">
+                    <input type="text">
+                    <button class="button"><span class="mif-calendar"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row cells3">
+
+            <div class="cell">
+                <div class="input-control modern text iconic">
+                    <input type="text">
+                    <span class="label">You login</span>
+                    <span class="informer">Please enter you login or email</span>
+                    <span class="placeholder">Input login</span>
+                    <span class="icon mif-user"></span>
+                </div>
+            </div>
+
+            <div class="cell">
+                <div class="input-control modern text iconic">
+                    <input type="text">
+                    <span class="label">You login</span>
+                    <span class="informer">Please enter you login or email</span>
+                    <span class="placeholder">Input login</span>
+                    <span class="icon mif-user"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="cell">
+                <div class="input-control modern text iconic">
+                    <input type="text">
+                    <span class="label">You login</span>
+                    <span class="informer">Please enter you login or email</span>
+                    <span class="placeholder">Input login</span>
+                    <span class="icon mif-user"></span>
+                </div>
+            </div>
+        </div>
+
+        <button class="button primary" onclick=" pushMessage('info') "><span class="mif-plus"></span>Create...</button>
+        <button class="button success" onclick=" pushMessage('success') "><span class="mif-play"></span>Start</button>
+        <button class="button warning" onclick=" pushMessage('warning') "><span class="mif-loop2"></span>Restart</button>
+        <button class="button alert" onclick=" pushMessage('alert') ">Stop all machines</button>
+        <hr class="thin bg-grayLighter">
+    </div>
+
+    
+
+@*  
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nome)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nome)
+            @Html.ValidationMessageFor(model => model.Nome)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataNascimento)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataNascimento)
+            @Html.ValidationMessageFor(model => model.DataNascimento)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Cnpj)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Cnpj)
+            @Html.ValidationMessageFor(model => model.Cnpj)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.InscricaoEstadual)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.InscricaoEstadual)
+            @Html.ValidationMessageFor(model => model.InscricaoEstadual)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.InscricaoMunicipal)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.InscricaoMunicipal)
+            @Html.ValidationMessageFor(model => model.InscricaoMunicipal)
+        </div>*@
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
