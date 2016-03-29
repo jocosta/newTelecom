@@ -72,10 +72,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NewTelecom.Domain\NewTelecom.Domain.csproj">
-      <Project>{a31ba120-0990-4406-ab3b-1fecf55885f2}</Project>
-      <Name>NewTelecom.Domain</Name>
-    </ProjectReference>
     <ProjectReference Include="..\NewTelecom.Infra.CrossCutting.Identity\NewTelecom.Infra.CrossCutting.Identity.csproj">
       <Project>{384d0f8a-e49e-425d-b64c-385041628bfc}</Project>
       <Name>NewTelecom.Infra.CrossCutting.Identity</Name>
